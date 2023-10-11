@@ -37,11 +37,7 @@ function Projects() {
           tags={["React", "NextJs", "TypeScript", "Sass", "Frame Motion"]}
         />
       </div>
-      <SectionBtn
-        arial="Ir para pagina de projetos"
-        content="Projetos"
-        href="/projetos"
-      />
+      <SectionBtn content="Projetos" href="/projetos" />
     </section>
   );
 }
