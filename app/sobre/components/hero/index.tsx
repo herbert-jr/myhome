@@ -10,7 +10,7 @@ function Hero() {
         width={350}
         height={350}
         alt="Herbert Junior"
-        priority={true}
+        loading="eager"
       />
       <article className={styles.hero__content}>
         <h1>Olá, Herbert Junior aqui 🙂</h1>

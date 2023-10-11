@@ -30,7 +30,7 @@ function Hero() {
         >
           <FiLinkedin />
         </Link>
-        <Link href="curriculo" aria-label="Ir para curriculo" target="_blank">
+        <Link href="/" aria-label="Ir para curriculo" target="_blank">
           <FiPaperclip />
         </Link>
       </div>

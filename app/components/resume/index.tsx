@@ -30,7 +30,7 @@ function Resume() {
       <SectionBtn
         arial="Ir para a página Sobre"
         href="/sobre"
-        content="Ver Mais"
+        content="Ver Mais Sobre Mim"
       />
     </section>
   );

@@ -17,7 +17,7 @@ function Navigation() {
     <nav className={styles.navigation}>
       <Link
         href={"/"}
-        aria-label="Ir para página principal"
+        aria-label="JR"
         title="Ir para página principal"
         className={styles.navigation__logo}
       >

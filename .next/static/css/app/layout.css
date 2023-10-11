@@ -1,0 +1,669 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/globals.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --playfair: "Playfair Display", serif;
+  --system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root,
+.default {
+  --bg: #ffffff;
+  --bg-alternative: #f7f7f9;
+  --text: #373a3c;
+  --text-alternative: #818a91;
+  --border: #eceeef;
+  --primary: #ff335f;
+  --primary-alternative: #ff1447;
+  --primary-dark: #e80624;
+  --secondary: #43a9a3;
+  --shadow: 15px 15px 30px #d9d9d9, -15px -15px 30px #ffffff;
+  --bg-box: linear-gradient(145deg, #ffffff, #f7f7f9);
+  --bg-box-hover: linear-gradient(145deg, #ff1447, #aa0025);
+}
+
+.dark {
+  --bg: #0e141b;
+  --bg-alternative: #252526;
+  --text: #ffffff;
+  --text-alternative: #818a91;
+  --border: #2d2d2d;
+  --primary: #ff5277;
+  --primary-alternative: #ff2957;
+  --primary-dark: #ff2957;
+  --secondary: #43a9a3;
+  --shadow: 15px 15px 30px #0c1117, -15px -15px 30px #10171f;
+  --bg-box: linear-gradient(145deg, #0e141b, #252526);
+  --bg-box-hover: linear-gradient(145deg, #ff1447, #aa0025);
+}
+
+.beach {
+  --bg: #fffffe;
+  --bg-alternative: #e3f6f5;
+  --text: #272343;
+  --text-alternative: #2d334a;
+  --border: #e3f6f5;
+  --primary: #ff9d00;
+  --primary-alternative: #ffca00;
+  --primary-dark: #aa6f0f;
+  --secondary: #bae8e8;
+  --bg-box: linear-gradient(145deg, #fffffe, #e3f6f5);
+  --bg-box-hover: linear-gradient(145deg, #ff9d00, #ffca00);
+}
+
+.choco {
+  --bg: #55423d;
+  --bg-alternative: #41312e;
+  --text: #fffffe;
+  --text-alternative: #ffc0ad;
+  --border: #271c19;
+  --primary: #f3ab87;
+  --primary-alternative: #ffc0ad;
+  --secondary: #e78fb3;
+  --primary-dark: #fcaf88;
+  --bg-box: linear-gradient(145deg, #55423d, #41312e);
+  --bg-box-hover: linear-gradient(145deg, #f3ab87, #ffc0ad);
+}
+
+.pastel {
+  --bg: #fef6e4;
+  --bg-alternative: #f3e1d8;
+  --text: #172c66;
+  --text-alternative: #006e8a;
+  --border: #f3d2c1;
+  --primary: #f582ae;
+  --primary-alternative: #ff3d6a;
+  --secondary: #8bd3dd;
+  --primary-dark: #e01261;
+  --bg-box: linear-gradient(145deg, #fef6e4, #f3e1d8);
+  --bg-box-hover: linear-gradient(145deg, #ff3d6a, #f582ae);
+}
+
+.bowser {
+  --bg: #16161a;
+  --bg-alternative: #29293e;
+  --text: #fffffe;
+  --text-alternative: #94a1b2;
+  --border: #383a61;
+  --primary: #7f5af0;
+  --primary-alternative: #e068fd;
+  --secondary: #2cb67d;
+  --primary-dark: #835cfa;
+  --bg-box: linear-gradient(145deg, #16161a, #29293e);
+  --bg-box-hover: linear-gradient(145deg, #7f5af0, #e068fd);
+}
+
+.pink {
+  --bg: #fec7d7;
+  --bg-alternative: #f8b1c5;
+  --text: #0e172c;
+  --text-alternative: #385291;
+  --border: #f79fb8;
+  --primary: #fffffe;
+  --primary-alternative: #ffffff;
+  --secondary: #a786df;
+  --primary-dark: #655d62;
+  --bg-box: linear-gradient(145deg, #fec7d7, #f8b1c5);
+  --bg-box-hover: linear-gradient(145deg, #fffffe, #ffffff);
+}
+
+.dune {
+  --bg: #f9f4ef;
+  --bg-alternative: #fce6d1;
+  --text: #716040;
+  --text-alternative: #a38348;
+  --border: #f3bc86;
+  --primary: #8c7851;
+  --primary-alternative: #a88745;
+  --primary-dark: #675022;
+  --secondary: #f25042;
+  --bg-box: linear-gradient(145deg, #f9f4ef, #fce6d1);
+  --bg-box-hover: linear-gradient(145deg, #8c7851, #a88745);
+}
+
+.florest {
+  --bg: #004643;
+  --bg-alternative: #003532;
+  --text: #fffffe;
+  --text-alternative: #94a1b2;
+  --border: #00302d;
+  --primary: #f9bc60;
+  --primary-alternative: #f8aa35;
+  --primary-dark: #ffd494;
+  --secondary: #e16162;
+  --bg-box: linear-gradient(145deg, #004643, #003532);
+  --bg-box-hover: linear-gradient(145deg, #f9bc60, #f8aa35);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--system);
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-alternative);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-alternative);
+  border-radius: 50px;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./app/components/footer/footer.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.footer_footer__uyyvk {
+  width: 100vw;
+  min-height: 5vh;
+  background-color: var(--text);
+  color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./app/components/header/header.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.header_header__arkog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border);
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./app/components/buttons/navButton/btn.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.btn_container__CwnCs {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  background: none;
+}
+.btn_container__CwnCs span {
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.btn_container__CwnCs span:nth-child(1) {
+  transform: translateY(-10px);
+  width: 15px;
+  left: 10px;
+}
+.btn_container__CwnCs span:nth-child(2) {
+  transform: translateY(10px);
+  width: 8px;
+  left: 10px;
+}
+.btn_container__CwnCs.btn_open__oZWkF span:nth-child(1) {
+  width: 28px;
+  transform: translateY(0) rotate(45deg);
+}
+.btn_container__CwnCs.btn_open__oZWkF span:nth-child(2) {
+  width: 28px;
+  transform: translateY(0) rotate(315deg);
+}
+.btn_container__CwnCs.btn_open__oZWkF span:nth-child(3) {
+  transform: translateX(60px);
+}
+@media (min-width: 1024px) {
+  .btn_container__CwnCs {
+    display: none;
+  }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./app/components/buttons/themeButton/btn.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.btn_container__rlJik {
+  width: 48px;
+  height: 48px;
+  background: none;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn_container__rlJik svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--text);
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./app/components/navigation/navigation.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.navigation_navigation__UHVq6 {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg);
+}
+.navigation_navigation__links__nQKiA {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .navigation_navigation__links__nQKiA {
+    flex-direction: row-reverse;
+  }
+}
+.navigation_navigation__logo__4565x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.navigation_navigation__logo__4565x span {
+  font-family: var(--playfair);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.navigation_navigation__logo__4565x img:first-child {
+  border-radius: 50%;
+  background-color: var(--primary);
+  margin-right: 0.8rem;
+}
+.navigation_navigation__logo__4565x img:last-child {
+  margin-left: 0.4rem;
+}
+.navigation_navigation__logo__4565x:hover span {
+  color: var(--primary-alternative);
+}
+.navigation_navigation__list__sL3Q6 {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  -webkit-clip-path: circle(24px at calc(100% - 45px) 35px);
+          clip-path: circle(24px at calc(100% - 45px) 35px);
+  transition: all 0.3s ease-in-out;
+}
+.navigation_navigation__list__sL3Q6.navigation_open__tPRV0 {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background-color: var(--text);
+}
+@media (min-width: 1024px) {
+  .navigation_navigation__list__sL3Q6 {
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    width: auto;
+    height: auto;
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
+}
+.navigation_navigation__item__ns2UA {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 40px;
+  margin-left: 10vw;
+  font-family: var(--playfair);
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .navigation_navigation__item__ns2UA {
+    line-height: 0;
+    margin-left: 0;
+    position: relative;
+  }
+}
+.navigation_navigation__item__ns2UA span {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: var(--system);
+  color: var(--text-alternative);
+}
+@media (min-width: 1024px) {
+  .navigation_navigation__item__ns2UA span {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+}
+.navigation_navigation__item__ns2UA a {
+  text-decoration: none;
+  color: var(--bg);
+}
+@media (min-width: 1024px) {
+  .navigation_navigation__item__ns2UA a {
+    font-family: var(--system);
+    color: var(--text);
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
+.navigation_navigation__item__ns2UA::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: -10rem;
+  width: calc(100% + 10rem);
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(-90deg, var(--primary) 0%, rgba(0, 212, 255, 0) 100%);
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+@media (min-width: 1024px) {
+  .navigation_navigation__item__ns2UA::before {
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+  }
+}
+.navigation_navigation__item__ns2UA:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./app/components/themeCard/card.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.card_card__ouqOC {
+  padding: 1.4rem;
+  border-radius: 0.8rem;
+  gap: 1rem;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  scroll-snap-align: center;
+  display: inline;
+  white-space: nowrap;
+  transition: transform 0.2s ease-in-out;
+  max-width: 140px;
+  max-height: 80px;
+}
+.card_card__ouqOC:hover {
+  transform: scale(1.08);
+}
+.card_card__name__NhpOr {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.card_card__colorsContainer__SPW1Q {
+  padding-block: 0.8rem;
+}
+.card_card__colorsContainer__SPW1Q span {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  white-space: nowrap;
+  text-align: left;
+  text-indent: 100%;
+  overflow: hidden;
+  vertical-align: bottom;
+  box-shadow: 0 0 0 2px #fff;
+}
+.card_card__ouqOC.card_active___oB5S {
+  border: 2px solid var(--primary);
+}
+.card_card__ouqOC.card_default__HrXFZ {
+  background-color: #ffffff;
+}
+.card_card__ouqOC.card_default__HrXFZ .card_card__name__NhpOr {
+  color: #373a3c;
+}
+.card_card__ouqOC.card_default__HrXFZ .card_card__colorsContainer__SPW1Q span:nth-child(1) {
+  background-color: #ff335f;
+}
+.card_card__ouqOC.card_default__HrXFZ .card_card__colorsContainer__SPW1Q span:nth-child(2) {
+  background-color: #43a9a3;
+}
+.card_card__ouqOC.card_default__HrXFZ .card_card__colorsContainer__SPW1Q span:nth-child(3) {
+  background-color: #eceeef;
+}
+.card_card__ouqOC.card_default__HrXFZ .card_card__colorsContainer__SPW1Q span:nth-child(4) {
+  background-color: #818a91;
+}
+.card_card__ouqOC.card_default__HrXFZ .card_card__colorsContainer__SPW1Q span:nth-child(5) {
+  background-color: #373a3c;
+}
+.card_card__ouqOC.card_dark__gn1Mo {
+  background-color: #0e141b;
+}
+.card_card__ouqOC.card_dark__gn1Mo .card_card__name__NhpOr {
+  color: #ffffff;
+}
+.card_card__ouqOC.card_dark__gn1Mo .card_card__colorsContainer__SPW1Q span:nth-child(1) {
+  background-color: #ff335f;
+}
+.card_card__ouqOC.card_dark__gn1Mo .card_card__colorsContainer__SPW1Q span:nth-child(2) {
+  background-color: #43a9a3;
+}
+.card_card__ouqOC.card_dark__gn1Mo .card_card__colorsContainer__SPW1Q span:nth-child(3) {
+  background-color: #eceeef;
+}
+.card_card__ouqOC.card_dark__gn1Mo .card_card__colorsContainer__SPW1Q span:nth-child(4) {
+  background-color: #818a91;
+}
+.card_card__ouqOC.card_dark__gn1Mo .card_card__colorsContainer__SPW1Q span:nth-child(5) {
+  background-color: #373a3c;
+}
+.card_card__ouqOC.card_beach__NXQmF {
+  background-color: #fffffe;
+}
+.card_card__ouqOC.card_beach__NXQmF .card_card__name__NhpOr {
+  color: #272343;
+}
+.card_card__ouqOC.card_beach__NXQmF .card_card__colorsContainer__SPW1Q span:nth-child(1) {
+  background-color: #ff9d00;
+}
+.card_card__ouqOC.card_beach__NXQmF .card_card__colorsContainer__SPW1Q span:nth-child(2) {
+  background-color: #bae8e8;
+}
+.card_card__ouqOC.card_beach__NXQmF .card_card__colorsContainer__SPW1Q span:nth-child(3) {
+  background-color: #e3f6f5;
+}
+.card_card__ouqOC.card_beach__NXQmF .card_card__colorsContainer__SPW1Q span:nth-child(4) {
+  background-color: #2d334a;
+}
+.card_card__ouqOC.card_beach__NXQmF .card_card__colorsContainer__SPW1Q span:nth-child(5) {
+  background-color: #272343;
+}
+.card_card__ouqOC.card_choco__8w_H9 {
+  background-color: #55423d;
+}
+.card_card__ouqOC.card_choco__8w_H9 .card_card__name__NhpOr {
+  color: #fffffe;
+}
+.card_card__ouqOC.card_choco__8w_H9 .card_card__colorsContainer__SPW1Q span:nth-child(1) {
+  background-color: #f3ab87;
+}
+.card_card__ouqOC.card_choco__8w_H9 .card_card__colorsContainer__SPW1Q span:nth-child(2) {
+  background-color: #e78fb3;
+}
+.card_card__ouqOC.card_choco__8w_H9 .card_card__colorsContainer__SPW1Q span:nth-child(3) {
+  background-color: #41312e;
+}
+.card_card__ouqOC.card_choco__8w_H9 .card_card__colorsContainer__SPW1Q span:nth-child(4) {
+  background-color: #ffc0ad;
+}
+.card_card__ouqOC.card_choco__8w_H9 .card_card__colorsContainer__SPW1Q span:nth-child(5) {
+  background-color: #fffffe;
+}
+.card_card__ouqOC.card_pastel__zUpqa {
+  background-color: #fef6e4;
+}
+.card_card__ouqOC.card_pastel__zUpqa .card_card__name__NhpOr {
+  color: #172c66;
+}
+.card_card__ouqOC.card_pastel__zUpqa .card_card__colorsContainer__SPW1Q span:nth-child(1) {
+  background-color: #f582ae;
+}
+.card_card__ouqOC.card_pastel__zUpqa .card_card__colorsContainer__SPW1Q span:nth-child(2) {
+  background-color: #8bd3dd;
+}
+.card_card__ouqOC.card_pastel__zUpqa .card_card__colorsContainer__SPW1Q span:nth-child(3) {
+  background-color: #f3e1d8;
+}
+.card_card__ouqOC.card_pastel__zUpqa .card_card__colorsContainer__SPW1Q span:nth-child(4) {
+  background-color: #006e8a;
+}
+.card_card__ouqOC.card_pastel__zUpqa .card_card__colorsContainer__SPW1Q span:nth-child(5) {
+  background-color: #172c66;
+}
+.card_card__ouqOC.card_bowser__6ijBP {
+  background-color: #16161a;
+}
+.card_card__ouqOC.card_bowser__6ijBP .card_card__name__NhpOr {
+  color: #fffffe;
+}
+.card_card__ouqOC.card_bowser__6ijBP .card_card__colorsContainer__SPW1Q span:nth-child(1) {
+  background-color: #7f5af0;
+}
+.card_card__ouqOC.card_bowser__6ijBP .card_card__colorsContainer__SPW1Q span:nth-child(2) {
+  background-color: #2cb67d;
+}
+.card_card__ouqOC.card_bowser__6ijBP .card_card__colorsContainer__SPW1Q span:nth-child(3) {
+  background-color: #29293e;
+}
+.card_card__ouqOC.card_bowser__6ijBP .card_card__colorsContainer__SPW1Q span:nth-child(4) {
+  background-color: #94a1b2;
+}
+.card_card__ouqOC.card_bowser__6ijBP .card_card__colorsContainer__SPW1Q span:nth-child(5) {
+  background-color: #fffffe;
+}
+.card_card__ouqOC.card_pink__BmLY8 {
+  background-color: #fec7d7;
+}
+.card_card__ouqOC.card_pink__BmLY8 .card_card__name__NhpOr {
+  color: #0e172c;
+}
+.card_card__ouqOC.card_pink__BmLY8 .card_card__colorsContainer__SPW1Q span:nth-child(1) {
+  background-color: #fffffe;
+}
+.card_card__ouqOC.card_pink__BmLY8 .card_card__colorsContainer__SPW1Q span:nth-child(2) {
+  background-color: #a786df;
+}
+.card_card__ouqOC.card_pink__BmLY8 .card_card__colorsContainer__SPW1Q span:nth-child(3) {
+  background-color: #0e172c;
+}
+.card_card__ouqOC.card_pink__BmLY8 .card_card__colorsContainer__SPW1Q span:nth-child(4) {
+  background-color: #f8b1c5;
+}
+.card_card__ouqOC.card_pink__BmLY8 .card_card__colorsContainer__SPW1Q span:nth-child(5) {
+  background-color: #f79fb8;
+}
+.card_card__ouqOC.card_dune__NAeaR {
+  background-color: #f9f4ef;
+}
+.card_card__ouqOC.card_dune__NAeaR .card_card__name__NhpOr {
+  color: #716040;
+}
+.card_card__ouqOC.card_dune__NAeaR .card_card__colorsContainer__SPW1Q span:nth-child(1) {
+  background-color: #fffffe;
+}
+.card_card__ouqOC.card_dune__NAeaR .card_card__colorsContainer__SPW1Q span:nth-child(2) {
+  background-color: #f25042;
+}
+.card_card__ouqOC.card_dune__NAeaR .card_card__colorsContainer__SPW1Q span:nth-child(3) {
+  background-color: #f3bc86;
+}
+.card_card__ouqOC.card_dune__NAeaR .card_card__colorsContainer__SPW1Q span:nth-child(4) {
+  background-color: #716040;
+}
+.card_card__ouqOC.card_dune__NAeaR .card_card__colorsContainer__SPW1Q span:nth-child(5) {
+  background-color: #6d562a;
+}
+.card_card__ouqOC.card_florest__WWUVr {
+  background-color: #004643;
+}
+.card_card__ouqOC.card_florest__WWUVr .card_card__name__NhpOr {
+  color: #fffffe;
+}
+.card_card__ouqOC.card_florest__WWUVr .card_card__colorsContainer__SPW1Q span:nth-child(1) {
+  background-color: #f9bc60;
+}
+.card_card__ouqOC.card_florest__WWUVr .card_card__colorsContainer__SPW1Q span:nth-child(2) {
+  background-color: #e16162;
+}
+.card_card__ouqOC.card_florest__WWUVr .card_card__colorsContainer__SPW1Q span:nth-child(3) {
+  background-color: #ffffff;
+}
+.card_card__ouqOC.card_florest__WWUVr .card_card__colorsContainer__SPW1Q span:nth-child(4) {
+  background-color: #004643;
+}
+.card_card__ouqOC.card_florest__WWUVr .card_card__colorsContainer__SPW1Q span:nth-child(5) {
+  background-color: #003532;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./app/components/themes/themes.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.themes_themes__Xr0ap {
+  background-color: var(--bg-alternative);
+  max-width: 100vw;
+  height: 0;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  text-align: center;
+  grid-gap: 1.6rem;
+  gap: 1.6rem;
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  align-items: center;
+  padding-inline: 2rem;
+  transition: height 0.5s ease-in-out;
+  overflow-y: hidden;
+}
+.themes_themes__Xr0ap.themes_open__Bkgf6 {
+  height: 150px;
+}
