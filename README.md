@@ -1,6 +1,5 @@
 <h1 align="center">
-  💻<br>Portfólio - Iuri Silva
-</h1>
+  💻<br>Portfólio - Herbert Junior
 
 ![Resultado final do projeto](/public/port.png)
 
@@ -14,6 +13,8 @@ O site é composto por 4 paginas:
 - **Sobre mim:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou e uma parte onde pode ver com mais detalhes todas as linguagens que sei além do front-end;
 - **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
 
+- **Certificados:** Apresenta alguns dos certificados que conquistei;
+
 ---
 
 ## 💼 Tecnologias utilizadas
@@ -26,6 +27,14 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - Frame Motion;
 - Emailjs;
 - NextJs
+
+---
+
+## ✨ Ligthouse
+
+![Resultado do Ligthouse](/public/ligthouse.png)
+
+O foco sempre será criar experiências ricas e interativa para **todos**.
 
 ---
 
