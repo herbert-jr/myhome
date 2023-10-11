@@ -17,6 +17,7 @@ function Projetos() {
           linkCode="/"
           linkDemo="/"
           tags={["React", "NextJs", "TypeScript", "Sass", "Frame Motion"]}
+          loading="eager"
         />
         <Card
           title="Meu portfólio"
@@ -26,6 +27,7 @@ function Projetos() {
           linkCode="/"
           linkDemo="/"
           tags={["React", "NextJs", "TypeScript", "Sass", "Frame Motion"]}
+          loading="eager"
         />
         <Card
           title="Meu portfólio"
@@ -35,6 +37,7 @@ function Projetos() {
           linkCode="/"
           linkDemo="/"
           tags={["React", "NextJs", "TypeScript", "Sass", "Frame Motion"]}
+          loading="lazy"
         />
         <Card
           title="Meu portfólio"
@@ -44,6 +47,7 @@ function Projetos() {
           linkCode="/"
           linkDemo="/"
           tags={["React", "NextJs", "TypeScript", "Sass", "Frame Motion"]}
+          loading="lazy"
         />
       </div>
       <Buttons next={{ href: "/certificados", label: "Certificados" }} />

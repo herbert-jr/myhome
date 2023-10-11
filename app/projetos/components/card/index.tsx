@@ -10,6 +10,7 @@ type CardProps = {
   linkCode: string;
   linkDemo: string;
   tags: string[];
+  loading?: "lazy" | "eager" | undefined;
 };
 
 function Card({
@@ -19,10 +20,17 @@ function Card({
   linkCode,
   linkDemo,
   tags,
+  loading,
 }: CardProps) {
   return (
     <div className={styles.card}>
-      <Image src={image} alt={title} width={720} height={340} />
+      <Image
+        src={image}
+        alt={title}
+        width={720}
+        height={340}
+        loading={loading}
+      />
       <div className={styles.card__content}>
         <h3>{title}</h3>
         <p>{description}</p>
