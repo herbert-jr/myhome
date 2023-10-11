@@ -1,6 +1,7 @@
 .card {
   width: min(100%, 500px);
   background-color: var(--bg-alternative);
+  color: var(--text-alternative);
 
   img {
     width: 100%;
@@ -22,7 +23,7 @@
   &__content {
     padding: 1rem;
 
-    h4 {
+    h3 {
       font-size: 2.5rem;
       font-weight: 600;
     }

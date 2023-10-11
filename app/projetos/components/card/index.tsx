@@ -24,7 +24,7 @@ function Card({
     <div className={styles.card}>
       <Image src={image} alt={title} width={720} height={340} />
       <div className={styles.card__content}>
-        <h4>{title}</h4>
+        <h3>{title}</h3>
         <p>{description}</p>
         <ul>
           {tags.map((tag, index) => (
