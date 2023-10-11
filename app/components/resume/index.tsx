@@ -27,11 +27,7 @@ function Resume() {
           desenvolver ainda mais no mundo profissional.
         </p>
       </div>
-      <SectionBtn
-        arial="Ir para a página Sobre"
-        href="/sobre"
-        content="Ver Mais Sobre Mim"
-      />
+      <SectionBtn href="/sobre" content="Ver Mais Sobre Mim" />
     </section>
   );
 }
