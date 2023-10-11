@@ -1,0 +1,294 @@
+.card {
+  padding: 1.4rem;
+  border-radius: 0.8rem;
+  gap: 1rem;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  scroll-snap-align: center;
+  display: inline;
+  white-space: nowrap;
+  transition: transform 0.2s ease-in-out;
+  max-width: 140px;
+  max-height: 80px;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+
+  &__name {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  &__colorsContainer {
+    padding-block: 0.8rem;
+    span {
+      display: inline-block;
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      white-space: nowrap;
+      text-align: left;
+      text-indent: 100%;
+      overflow: hidden;
+      vertical-align: bottom;
+      box-shadow: 0 0 0 2px #fff;
+    }
+  }
+
+  &.active {
+    border: 2px solid var(--primary);
+  }
+
+  &.default {
+    background-color: #ffffff;
+
+    & .card__name {
+      color: #373a3c;
+    }
+
+    & .card__colorsContainer {
+      span {
+        &:nth-child(1) {
+          background-color: #ff335f;
+        }
+        &:nth-child(2) {
+          background-color: #43a9a3;
+        }
+        &:nth-child(3) {
+          background-color: #eceeef;
+        }
+        &:nth-child(4) {
+          background-color: #818a91;
+        }
+        &:nth-child(5) {
+          background-color: #373a3c;
+        }
+      }
+    }
+  }
+
+  &.dark {
+    background-color: #0e141b;
+
+    & .card__name {
+      color: #ffffff;
+    }
+
+    & .card__colorsContainer {
+      span {
+        &:nth-child(1) {
+          background-color: #ff335f;
+        }
+        &:nth-child(2) {
+          background-color: #43a9a3;
+        }
+        &:nth-child(3) {
+          background-color: #eceeef;
+        }
+        &:nth-child(4) {
+          background-color: #818a91;
+        }
+        &:nth-child(5) {
+          background-color: #373a3c;
+        }
+      }
+    }
+  }
+
+  &.beach {
+    background-color: #fffffe;
+
+    & .card__name {
+      color: #272343;
+    }
+
+    & .card__colorsContainer {
+      span {
+        &:nth-child(1) {
+          background-color: #ff9d00;
+        }
+        &:nth-child(2) {
+          background-color: #bae8e8;
+        }
+        &:nth-child(3) {
+          background-color: #e3f6f5;
+        }
+        &:nth-child(4) {
+          background-color: #2d334a;
+        }
+        &:nth-child(5) {
+          background-color: #272343;
+        }
+      }
+    }
+  }
+
+  &.choco {
+    background-color: #55423d;
+
+    & .card__name {
+      color: #fffffe;
+    }
+
+    & .card__colorsContainer {
+      span {
+        &:nth-child(1) {
+          background-color: #f3ab87;
+        }
+        &:nth-child(2) {
+          background-color: #e78fb3;
+        }
+        &:nth-child(3) {
+          background-color: #41312e;
+        }
+        &:nth-child(4) {
+          background-color: #ffc0ad;
+        }
+        &:nth-child(5) {
+          background-color: #fffffe;
+        }
+      }
+    }
+  }
+
+  &.pastel {
+    background-color: #fef6e4;
+
+    & .card__name {
+      color: #172c66;
+    }
+
+    & .card__colorsContainer {
+      span {
+        &:nth-child(1) {
+          background-color: #f582ae;
+        }
+        &:nth-child(2) {
+          background-color: #8bd3dd;
+        }
+        &:nth-child(3) {
+          background-color: #f3e1d8;
+        }
+        &:nth-child(4) {
+          background-color: #006e8a;
+        }
+        &:nth-child(5) {
+          background-color: #172c66;
+        }
+      }
+    }
+  }
+
+  &.bowser {
+    background-color: #16161a;
+
+    & .card__name {
+      color: #fffffe;
+    }
+
+    & .card__colorsContainer {
+      span {
+        &:nth-child(1) {
+          background-color: #7f5af0;
+        }
+        &:nth-child(2) {
+          background-color: #2cb67d;
+        }
+        &:nth-child(3) {
+          background-color: #29293e;
+        }
+        &:nth-child(4) {
+          background-color: #94a1b2;
+        }
+        &:nth-child(5) {
+          background-color: #fffffe;
+        }
+      }
+    }
+  }
+
+  &.pink {
+    background-color: #fec7d7;
+
+    & .card__name {
+      color: #0e172c;
+    }
+
+    & .card__colorsContainer {
+      span {
+        &:nth-child(1) {
+          background-color: #fffffe;
+        }
+        &:nth-child(2) {
+          background-color: #a786df;
+        }
+        &:nth-child(3) {
+          background-color: #0e172c;
+        }
+        &:nth-child(4) {
+          background-color: #f8b1c5;
+        }
+        &:nth-child(5) {
+          background-color: #f79fb8;
+        }
+      }
+    }
+  }
+
+  &.dune {
+    background-color: #f9f4ef;
+
+    & .card__name {
+      color: #716040;
+    }
+
+    & .card__colorsContainer {
+      span {
+        &:nth-child(1) {
+          background-color: #fffffe;
+        }
+        &:nth-child(2) {
+          background-color: #f25042;
+        }
+        &:nth-child(3) {
+          background-color: #f3bc86;
+        }
+        &:nth-child(4) {
+          background-color: #716040;
+        }
+        &:nth-child(5) {
+          background-color: #6d562a;
+        }
+      }
+    }
+  }
+
+  &.florest {
+    background-color: #004643;
+
+    & .card__name {
+      color: #fffffe;
+    }
+
+    & .card__colorsContainer {
+      span {
+        &:nth-child(1) {
+          background-color: #f9bc60;
+        }
+        &:nth-child(2) {
+          background-color: #e16162;
+        }
+        &:nth-child(3) {
+          background-color: #ffffff;
+        }
+        &:nth-child(4) {
+          background-color: #004643;
+        }
+        &:nth-child(5) {
+          background-color: #003532;
+        }
+      }
+    }
+  }
+}

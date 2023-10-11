@@ -1,0 +1,25 @@
+@import "../../styles/mixins/responsive.scss";
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding-block: 3rem;
+  width: 100%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+
+    @include Tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

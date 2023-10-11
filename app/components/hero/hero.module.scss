@@ -1,0 +1,117 @@
+@import "../../styles/mixins/responsive.scss";
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  p:first-child {
+    color: var(--primary);
+    font-size: clamp(1.6rem, 2.5vw, 1.9rem);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: clamp(4.5rem, 10vw, 9rem);
+    font-weight: 900;
+    color: var(--text);
+    font-family: var(--playfair);
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+
+    span {
+      color: var(--primary);
+    }
+  }
+
+  p:nth-child(3) {
+    font-size: clamp(2.4rem, 2.5vw, 3.2rem);
+    font-weight: 300;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: clamp(2.4rem, 2.5vw, 3.2rem);
+    margin-top: 2rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+      background: var(--bg-box) padding-box,
+        linear-gradient(
+            145deg,
+            transparent 35%,
+            var(--primary),
+            var(--secondary)
+          )
+          border-box;
+      border: 0.5px solid transparent;
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--bg);
+        background: var(--bg-box-hover);
+        transform: translateY(-3px);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  bottom: 10%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px var(--primary) solid;
+  border-bottom: 2px var(--primary) solid;
+}
+
+.arrow:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  border-left: none;
+  border-top: none;
+  border-right: 1px var(--primary) solid;
+  border-bottom: 1px var(--primary) solid;
+  animation: arrow 2s ease-in-out infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}

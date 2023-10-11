@@ -1,0 +1,59 @@
+@import "@/app/styles/mixins/responsive.scss";
+
+.container {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  background: none;
+
+  & span {
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 6px;
+    transition: 0.5s;
+
+    &:nth-child(1) {
+      transform: translateY(-10px);
+      width: 15px;
+      left: 10px;
+    }
+
+    &:nth-child(2) {
+      transform: translateY(10px);
+      width: 8px;
+      left: 10px;
+    }
+  }
+
+  &.open {
+    & span {
+      &:nth-child(1) {
+        width: 28px;
+        transform: translateY(0) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        width: 28px;
+        transform: translateY(0) rotate(315deg);
+      }
+
+      &:nth-child(3) {
+        transform: translateX(60px);
+      }
+    }
+  }
+  @include Desktop {
+    display: none;
+  }
+}

@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+}
+
+.details {
+  width: 100%;
+}
+
+.summary {
+  padding: 1rem 0;
+  border-top: 2px solid var(--border);
+  position: relative;
+  cursor: pointer;
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  list-style: none;
+
+  &::after {
+    content: "+";
+    color: var(--text);
+    position: absolute;
+    font-size: 2.5rem;
+    line-height: 0;
+    margin-top: 0.75rem;
+    right: 0;
+    font-weight: 500;
+    transition: all 200ms linear;
+  }
+
+  &__content {
+    padding-block: 1rem;
+    font-size: clamp(1.8rem, 1rem + 2vw, 2.4rem);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 0.5em;
+
+      & ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 300;
+        font-size: clamp(1.5rem, 1rem + 2vw, 1.8rem);
+        padding-inline-start: 2rem;
+
+        li {
+          margin-right: 3rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  &.open {
+    &::after {
+      transform: rotate(-45deg);
+      color: var(--primary);
+    }
+  }
+}

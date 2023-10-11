@@ -1,0 +1,23 @@
+@import "../../styles/mixins/responsive.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  @include Tablet {
+    align-items: center;
+    text-align: center;
+  }
+  span {
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    color: var(--primary);
+  }
+
+  h2 {
+    font-size: clamp(3.5rem, 5vw, 7rem);
+    font-weight: 700;
+    color: var(--text);
+    font-family: var(--playfair);
+  }
+}

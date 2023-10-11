@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+
+  a {
+    color: var(--primary);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    padding: 1.4rem 2.8rem;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px;
+  }
+
+  a:hover {
+    background-color: var(--primary);
+    color: var(--bg);
+  }
+}
