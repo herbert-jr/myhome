@@ -1,28 +1,45 @@
-# Meu portfólio
+<h1 align="center">
+  💻<br>Portfólio - Iuri Silva
+</h1>
 
-Este é o README para o meu portfólio pessoal, uma aplicação web desenvolvida utilizando as seguintes tecnologias:
+![Resultado final do projeto](/public/port.png)
 
-Este é o README para o meu portfólio pessoal, uma aplicação web desenvolvida utilizando as seguintes tecnologias:
+<h4 align="center"><a href="https://herberthome.vercel.app/">Clique para visitar o projeto</a></h4>
 
-- React
-- TypeScript
-- Next.js
-- Sass
-- Framer Motion
+## 📚 Seções
 
-## Descrição
+O site é composto por 4 paginas:
 
-Meu portfólio é uma aplicação web que apresenta minha experiência, habilidades e projetos recentes. Foi desenvolvido com o objetivo de mostrar meu trabalho e facilitar a comunicação com potenciais empregadores, colegas e colaboradores.
+- **Home:** Nela temos uma breve apresentação, principais projetos e habilidades que possuo. Além de uma área de contato onde você pode me enviar um email;
+- **Sobre mim:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou e uma parte onde pode ver com mais detalhes todas as linguagens que sei além do front-end;
+- **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos códigos no GitHub;
 
-## Funcionalidades Principais
+---
 
-1. **Página Inicial:** A página inicial contém uma breve introdução sobre mim e meu objetivo profissional. Além disso, exibe links para as principais seções do portfólio.
-2. **Seção de Projetos:** Nesta seção, destaco alguns dos projetos mais relevantes em que trabalhei. Cada projeto é apresentado com uma imagem, uma breve descrição e um link para saber mais detalhes.
-3. **Habilidades:** Aqui, listo minhas principais habilidades, divididas em categorias. Utilizei ícones para tornar a apresentação mais visual e intuitiva.
-4. **Experiência:** Apresento minha experiência profissional passada, incluindo informações sobre empresas, cargos e responsabilidades. Cada experiência é acompanhada por um resumo e datas relevantes.
-5. **Contato:** Forneço informações de contato, como endereço de e-mail e links para minhas redes sociais e perfil no LinkedIn. Também incluí um formulário de contato para facilitar a comunicação direta.
-6. **Animações:** Utilizei a biblioteca Framer Motion para adicionar animações sutis e interações envolventes em toda a aplicação. Isso cria uma experiência de usuário mais agradável e atraente.
+## 💼 Tecnologias utilizadas
 
-## Licença
+Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
+- React;
+- Sass;
+- TypeScript;
+- Frame Motion;
+- Emailjs;
+- NextJs
+
+---
+
+<h2>⨺ Autor</h2>
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/herbert-jr">
+        <img src="https://avatars.githubusercontent.com/u/113191050?v=4" width="100px;" alt="Foto do Herbert no GitHub"/><br>
+        <sub>
+          <b>Herbert Junior </b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
