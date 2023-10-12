@@ -13,7 +13,12 @@ function SkillContainer({ text, skills }: SkillContainerProps) {
       <span>{text}</span>
       <ul className={styles.container__list}>
         {skills.map((skill, index) => (
-          <SkillItem key={index} icon={skill.icon} text={skill.text} />
+          <SkillItem
+            key={index}
+            icon={skill.icon}
+            text={skill.text}
+            index={index}
+          />
         ))}
       </ul>
     </div>

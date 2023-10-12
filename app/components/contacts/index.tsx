@@ -7,7 +7,7 @@ import Form from "../formulario";
 function Contacts() {
   return (
     <section className={styles.contacts} id="contatos">
-      <Title subtitle="Que tal um alo?" title="Entre em contato." />
+      <Title subtitle="Que tal um alô?" title="Entre em contato." />
 
       <Form />
     </section>

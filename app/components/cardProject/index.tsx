@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./card.module.scss";
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 type CardProps = {
   title: string;
@@ -20,8 +23,22 @@ function Card({
   linkDemo,
   tags,
 }: CardProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.33 1"],
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
-    <div className={styles.card}>
+    <motion.div
+      className={styles.card}
+      ref={ref}
+      style={{
+        scale: scaleProgress,
+        opacity: opacityProgress,
+      }}
+    >
       <Image src={image} alt={title} width={720} height={340} loading="lazy" />
       <div className={styles.card__content}>
         <h3>{title}</h3>
@@ -50,7 +67,7 @@ function Card({
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
